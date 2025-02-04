@@ -121,11 +121,18 @@ form button:active {
 }
 
 /* Footer styling */
-footer {
+footer p{
     position: absolute;
     bottom: 20px;
-    font-size: 0.9em;
-    color: #95a5a6;
+    font-size: 1.0em;
+    color: #3498db;
+    font-weight:bold;
+
+}
+
+footer a{
+    text-decoration:none;
+    color: #3498db;
 }
 
 /* Loading Spinner */
