@@ -1,0 +1,233 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+  color: #333;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    color: #333;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Header section */
+h1 {
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Form styling */
+form {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+form input[type="file"] {
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+form input[type="file"]:hover {
+    border-color: #3498db;
+    background-color: #f1f1f1;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+form button:active {
+    background-color: #21618c;
+}
+
+/* Result section */
+#result {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+    margin-top: 20px;
+    display: block;
+}
+
+#result h3 {
+    font-size: 1.5em;
+    color: #3498db;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#result p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+#result p span {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+#result p em {
+    color: #3498db;
+    font-style: italic;
+}
+
+/* Footer styling */
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9em;
+    color: #95a5a6;
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form input[type="file"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    form button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    form input[type="file"] {
+        font-size: 14px;
+    }
+
+    form button {
+        padding: 10px;
+    }
+
+    #result {
+        padding: 15px;
+    }
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+button.dark-mode {
+  background-color: #555;
+}
+
+.theme-toggle{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.fixed-button {
+    position: fixed; /* Fixes the button's position */
+    right: 20px;      /* Position from the right side */
+    top: 20px;     /* Position from the bottom of the page */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fixed-button:hover {
+    background-color: #45a049;
+}
